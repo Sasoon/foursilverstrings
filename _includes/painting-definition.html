@@ -1,0 +1,10 @@
+<button
+ class="buy-button snipcart-add-item"
+ data-item-id="{{ painting.identifier }}"
+ data-item-name="{{ painting.name }}"
+ data-item-price="{{ painting.price }}"
+ data-item-image="{{ painting.image }}"
+ data-item-url="https://snipcart-jekyll.netlify.com{{ page.url }}"
+ data-item-description="{{ painting.content | remove: '<p>' | remove: '</p>' }}">
+ Add to cart (${{ painting.price }})
+</button>

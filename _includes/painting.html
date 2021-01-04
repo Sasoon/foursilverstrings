@@ -1,0 +1,8 @@
+<div class="painting">
+    <div class="painting__information">
+       <h2 class="painting__title">{{ painting.name }}</h2>
+       <p class="painting__description">{{ painting.content | remove: '<p>' | remove: '</p>' }}</p>
+       {% include painting-definition.html %}
+    </div>
+    <img src="{{ painting.image }}" alt="{{ painting.name }} painting image" class="painting__image">
+</div>
