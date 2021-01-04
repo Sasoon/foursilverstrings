@@ -2,6 +2,7 @@
 layout: page
 title: Paintings
 permalink: /paintings/
+order: 2
 ---
 
 

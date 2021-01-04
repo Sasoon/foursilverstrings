@@ -26,11 +26,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: url(/assets/images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: black;
 }
 
 
@@ -40,9 +36,9 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, a
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit;
 }
 
 
@@ -52,6 +48,7 @@ ul, ol, dl, figure,
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  margin: 3em 0;
 }
 
 
@@ -113,7 +110,6 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
   }
 
   .social-media-list &:hover {

@@ -1,0 +1,29 @@
+.home {
+    background: url(/assets/images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .header {
+        font-family: $heading-font-family;
+        font-weight: 100;
+        line-height: 90px;
+        word-spacing: 999em;
+        color: $brand-color;
+        @include relative-font-size(5.625);
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .cta {
+        padding: 10px 40px;
+        background-color: $brand-color;
+        color: black;
+        display: inline-block;
+        border-radius: 2px;        
+    }
+}
+
