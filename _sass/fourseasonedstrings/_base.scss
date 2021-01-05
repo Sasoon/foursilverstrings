@@ -16,7 +16,6 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -26,7 +25,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: black;
+  background-color: $bg-color;
 }
 
 
@@ -178,6 +177,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  transition: (all .2s ease-in-out);
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));

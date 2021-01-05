@@ -12,7 +12,8 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #fff !default;
-$background-color: #fdfdfd !default;
+$bg-color:         #1d1d1d !default;
+$bg-color-alt:     #262626;
 $brand-color:      #ec7969 !default;
 
 $grey-color:       #828282 !default;
@@ -26,6 +27,7 @@ $content-width:    800px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
+$on-desktop:       900px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -48,6 +50,7 @@ $on-laptop:        800px !default;
 @import
   "fourseasonedstrings/base",
   "fourseasonedstrings/layout",
+  "fourseasonedstrings/contact",
   "fourseasonedstrings/homepage",
   "fourseasonedstrings/syntax-highlighting"
 ;
