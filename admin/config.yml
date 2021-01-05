@@ -7,10 +7,11 @@ media_folder: 'assets/images'
 collections:
   - name: 'paintings'
     create: true
-    label: 'Paintings'
+    label: 'Painting'
     folder: '_paintings/'
+    slug: "{{ title }}"
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Identifier", name: "identifier", widget: "string"}
-      - {label: "Price", name: "price", widget: "integer"}
+      - {label: "Price", name: "price", widget: "number"}
       - {label: "Image", name: "image", widget: "image"}
