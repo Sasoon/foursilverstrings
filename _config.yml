@@ -57,3 +57,5 @@ collections:
   paintings:
     output: true
     permalink: /:collection/:title
+
+include: [_redirects]
