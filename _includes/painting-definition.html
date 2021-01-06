@@ -1,10 +1,14 @@
 <button
  class="buy-button snipcart-add-item"
  data-item-id="{{ painting.identifier }}"
- data-item-name="{{ painting.name }}"
+ data-item-name="{{ painting.title }}"
  data-item-price="{{ painting.price }}"
  data-item-image="{{ painting.image }}"
+ data-item-quantity="{{ painting.quantity }}"
+ data-item-custom1-name="Size"
+ data-item-custom1-options="Small[+5.00]|Medium[+10.00]|Large[+15.00]"
  data-item-url="https://snipcart-jekyll.netlify.com{{ page.url }}"
  data-item-description="{{ painting.content | remove: '<p>' | remove: '</p>' }}">
- Add to cart (${{ painting.price }})
+ Add to cart
 </button>
+

@@ -54,4 +54,6 @@ plugins:
 #   - vendor/ruby/
 
 collections:
- - paintings
+  paintings:
+    output: true
+    permalink: /:collection/:title

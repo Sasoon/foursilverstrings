@@ -1,8 +1,11 @@
-<div class="painting">
+<!-- Painting listing page -->
+<div class="painting-listing">
     <div class="painting__information">
-       <h2 class="painting__title">{{ painting.name }}</h2>
-       <p class="painting__description">{{ painting.content | remove: '<p>' | remove: '</p>' }}</p>
-       {% include painting-definition.html %}
+        <h2 class="painting__title">{{ painting.title }}</h2>
+        <p class="painting__description">{{ painting.content | remove: '<p>' | remove: '</p>' }}</p>
+        {% include painting-definition.html %}
     </div>
-    <img src="{{ painting.image }}" alt="{{ painting.name }} painting image" class="painting__image">
+<a href="{{painting.url}}">
+    <img src="{{ painting.image }}" alt="{{ painting.title }} painting image" class="painting__image">
+</a>
 </div>
