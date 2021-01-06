@@ -58,6 +58,4 @@ collections:
     output: true
     permalink: /:collection/:title
 
-netlify:
-  redirects:
-    - /* /404.html
+include: [_redirects]
