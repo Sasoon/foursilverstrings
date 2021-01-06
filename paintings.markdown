@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Paintings
-permalink: /paintings/
+permalink: /paintings
 order: 2
 ---
 
