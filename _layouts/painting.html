@@ -7,9 +7,6 @@ title: Paintings
   <div class="painting">
     <h2 class="painting__title">{{ painting.title }}</h2>
     <p class="painting__description">{{ painting.content | remove: '<p>' | remove: '</p>' }}</p>
-    <div class="painting__quantity">
-      <label for="quantity">QUANTITY</label> <input type="number" name="quantity" id="quantity" value="1" min="1">
-   </div>
     {% include painting-definition.html %}
     <img src="{{ painting.image }}" alt="{{ painting.title }} painting image" class="painting__image">
   </div>

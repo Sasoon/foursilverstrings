@@ -1,7 +1,7 @@
 ---
 title: star
 identifier: starry-night
-price: -1
+price: 1
 layout: painting
 image: /assets/images/starry-night.jpg
 ---
