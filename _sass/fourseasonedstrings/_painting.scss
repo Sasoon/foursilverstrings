@@ -1,0 +1,16 @@
+.paintings {
+    .page-content {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+    .painting-listing {
+        flex: 1;
+        min-width: 13em;
+        margin: 1em;
+    }
+    .painting__image {
+
+    }
+}
+

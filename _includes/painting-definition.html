@@ -3,11 +3,11 @@
     <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
     <button
         class="buy-button snipcart-add-item"
+        data-item-quantity="1"
         data-item-id="{{ page.identifier }}"
         data-item-name="{{ page.title }}"
         data-item-price="{{ page.price }}"
         data-item-image="{{ page.image }}"
-        data-item-quantity="1"
         data-item-custom1-name="Size"
         data-item-custom1-options="Small[+5.00]|Medium[+10.00]|Large[+15.00]"
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
