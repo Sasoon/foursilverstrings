@@ -1,7 +1,7 @@
 ---
-name: STAGE
+name: STAGEd
 identifier: "1"
 layout: painting
-price: 32
+price: 1
 image: /assets/images/painting.jpg
 ---
