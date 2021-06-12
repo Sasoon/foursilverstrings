@@ -1,7 +1,7 @@
 ---
-name: staging painting
+name: STAGE
 identifier: "1"
 layout: painting
-price: 54
+price: 32
 image: /assets/images/painting.jpg
 ---
