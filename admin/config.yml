@@ -9,7 +9,7 @@ collections:
     create: true
     label: 'Painting'
     folder: '_paintings/'
-    slug: "{{ title }}"
+    slug: "{{ name }}"
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Identifier", name: "identifier", widget: "string"}
