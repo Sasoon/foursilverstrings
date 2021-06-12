@@ -1,7 +1,7 @@
 ---
-title: flowers
+title: I PAINT YO
 identifier: flowers
-price: 1
+price: 11
 layout: painting
 image: /assets/images/flowers.jpg
 ---
