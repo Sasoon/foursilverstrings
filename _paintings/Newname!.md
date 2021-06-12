@@ -1,7 +1,6 @@
 ---
-name: STAGEd
-identifier: "1"
-layout: painting
+title: Sava
+description: This describes the image
 price: 1
 image: /assets/images/painting.jpg
 ---
