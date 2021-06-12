@@ -1,7 +1,8 @@
 ---
 title: star
+name: SASOON PAINTS
 identifier: starry-night
-price: 1
+price: 97
 layout: painting
 image: /assets/images/starry-night.jpg
 ---
