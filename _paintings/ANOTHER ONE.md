@@ -1,6 +1,6 @@
 ---
-name: ANOTHER ONE??
-identifier: "22"
-price: 3
-image: /assets/images/starry-night.jpg
+name: Updated
+identifier: "21"
+price: 31
+image: /assets/images/bg.jpg
 ---
