@@ -53,6 +53,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
 collections:
   paintings:
     output: true

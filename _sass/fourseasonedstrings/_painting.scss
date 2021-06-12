@@ -4,13 +4,37 @@
         flex-flow: wrap;
         justify-content: space-between;
     }
-    .painting-listing {
-        flex: 1;
-        min-width: 13em;
-        margin: 1em;
-    }
-    .painting__image {
+    .painting-item {
+        float: left;
+        width: 130px;
+        height: 160px;
+        border: 2px solid hsla(0, 0%, 0%, 0.5);
+    } 
+}
 
-    }
+/* ---- grid ---- */
+
+.paintings-container {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.paintings-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.painting-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
 }
 
