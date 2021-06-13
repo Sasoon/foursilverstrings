@@ -58,3 +58,10 @@ collections:
   paintings:
     output: true
     permalink: /:collection/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "paintings"
+    values:
+      layout: "painting"    
