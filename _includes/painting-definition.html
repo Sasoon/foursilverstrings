@@ -1,9 +1,10 @@
 <div>
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" class="qty" min="1" value="1" />
+    <label for="{{ page.identifier }}-qty">Quantity:</label>
+    <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
+    <span class="price">${{page.price}}</span>
     <button
         class="buy-button snipcart-add-item"
-        data-item-quantity="1"
+        data-item-quantity="7"
         data-item-id="{{ page.identifier }}"
         data-item-name="{{ page.title }}"
         data-item-price="{{ page.price }}"
@@ -12,7 +13,8 @@
         data-item-custom1-options="Small[+5.00]|Medium[+10.00]|Large[+15.00]"
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
         data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}">
-        Add to cart (${{ page.price }})
+        Add to cart
     </button>
 </div>
+
 
