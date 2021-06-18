@@ -1,17 +1,34 @@
+
+
 <div>
-    <label for="{{ page.identifier }}-qty">Quantity:</label>
-    <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
+    <label for="{{ product.identifier }}-qty">Quantity:</label>
+    <input type="number" id="{{ product.identifier }}-qty" class="qty" min="1" value="1" />
     <button
-        class="buy-button snipcart-add-item"
-        data-item-quantity="1"
-        data-item-id="{{ page.identifier }}"
-        data-item-name="{{ page.title }}"
-        data-item-price="{{ page.price }}"
-        data-item-image="{{ page.image }}"
-        data-item-custom1-name="Size"
-        data-item-custom1-options="Small[+5.00]|Medium[+10.00]|Large[+15.00]"
-        data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
-        data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}">
-        Add to cart (${{ page.price }})
+      class="buy-button snipcart-add-item"
+      data-item-quantity="1"
+      data-item-id="{{ product.identifier }}"
+      data-item-name="{{ product.name }}"
+      data-item-price="{{ product.price }}"
+      data-item-image="{{ product.image }}"
+      data-item-url="https://demo.snipcart.com{{ page.url }}"
+      data-item-description="{{ product.content | remove: '<p>' | remove: '</p>' }}"
+      data-item-custom1-name="Frame color"
+      data-item-custom1-options="Black|Brown|Gold[+300.00]">
+      Buy 1 physical copy (${{ product.price }})
     </button>
-</div>
+  </div>
+  
+  
+  {% if product.file_guid %}
+  <button
+    class="buy-button snipcart-add-item"
+    data-item-id="{{ product.identifier }}-DIGITAL"
+    data-item-file-guid="{{ product.file_guid }}"
+    data-item-name="{{ product.name}} - Digital copy (JPG)"
+    data-item-price="{{ product.price | minus: 20 }}"
+    data-item-image="{{ product.image }}"
+    data-item-url="https://demo.snipcart.com{{ page.url }}"
+    data-item-description="{{ product.content | remove: '<p>' | remove: '</p>' }}">
+    Buy digital copy (JPG) (${{ product.price | minus: 20 }})
+  </button>
+  {% endif %}

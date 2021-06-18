@@ -12,6 +12,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Identifier", name: "identifier", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Image", name: "image", widget: "image"}
