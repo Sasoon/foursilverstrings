@@ -1,6 +1,6 @@
 ---
-title: one more time!
-description: desc
-price: 222
+title: changed from stage
+description: haha
+price: 76
 image: /assets/images/flowers.jpg
 ---
