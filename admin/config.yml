@@ -14,5 +14,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Identifier", name: "identifier", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Price1 Label", name: "price1-label", widget: "string"}
+      - {label: "Price2 Label", name: "price2-label", widget: "string"}
+      - {label: "Price3 Label", name: "price3-label", widget: "string"}
+      - {label: "Price1", name: "price1", widget: "number"}
+      - {label: "Price2", name: "price2", widget: "number"}
+      - {label: "Price3", name: "price3", widget: "number"}
       - {label: "Image", name: "image", widget: "image"}
+

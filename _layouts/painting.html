@@ -4,8 +4,6 @@ title: Paintings
 ---
 <!-- This is the individual painting page config -->
 <div class="painting">
-  <h2 class="painting__title">{{ page.title }}</h2>
-  <p class="painting__description">{{ page.content | remove: '<p>' | remove: '</p>' }}</p>
   {% include painting-definition.html %}
   <img src="{{ page.image }}" alt="{{ page.title }} painting image" class="painting__image">
 </div>
