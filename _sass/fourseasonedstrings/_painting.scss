@@ -14,13 +14,6 @@
   max-width: 1200px;
 }
 
-/* CLEARFIX */
-.paintings-container:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 /* ---- GRID-ITEM ---- */
 .painting-item {
   flex: 1;
@@ -28,9 +21,16 @@
   margin-right: 1em;
 }
 
+/* CLEARFIX */
+.paintings-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 /* ---- PAINTING-DETAIL ---- */
 
-.painting {
+.painting__container {
   display: flex;
   flex-flow: wrap;
 }
@@ -54,10 +54,30 @@
   margin-left: 1em;
 }
 
+.painting__image {
+  width: 50%;
+}
+
+.description {
+  display: block;
+}
+
 .buy-button {
   width: 100%;
   padding: .5em;
   text-transform: uppercase;
   font-family: 'Montserrat';
   font-weight: 900;
+}
+
+// Mobile
+@include media-query($on-laptop) {
+  .painting__container {
+    flex-flow: column;
+  }
+
+  .painting__image {
+    width: 100%;
+  }  
+
 }

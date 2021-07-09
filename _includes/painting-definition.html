@@ -1,15 +1,17 @@
 <div class="painting__detail">
     <h2 class="painting__title">{{ page.title }}</h2>
-    <label for="{{ page.price2 }}">Price:</label>
-    <span class="price">${{page2.price}}</span>
+    <span class="price">${{page.price2}}</span>
+    <span class="description">{{page.description}}</span>
 
     <!-- New pricing -->
-    <label for="price">Price</label>
-    <select id="price" class="price-picker">
-        <option value="{{ page.price1 }}">{{ page.label1 }}: ${{page.price1}}</option>
-        <option selected="selected" value="{{ page.price2 }}">{{ page.label2 }}: ${{page.price2}}</option>
-        <option value="{{ page.price3 }}">{{ page.label3 }}: ${{page.price3}}</option>
-    </select>
+    <div class="size-container">
+        <label for="price">Size</label>
+        <select id="price" class="price-picker">
+            <option value="{{ page.price1 }}" label="{{ page.price1-label }}">{{ page.price1-label }}: ${{page.price1}}</option>
+            <option selected value="{{ page.price2 }}">{{ page.price2-label }}: ${{page.price2}}</option>
+            <option value="{{ page.price3 }}">{{ page.price3-label }}: ${{page.price3}}</option>
+        </select>
+    </div>
     <!-- New pricing end -->
 
     <p class="painting__description">{{ page.content | remove: '<p>' | remove: '</p>' }}</p>
@@ -17,13 +19,13 @@
     <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
     <button
         class="buy-button snipcart-add-item"
-        data-item-quantity="7"
+        data-item-quantity="1"
+        data-item-stackable="never"
         data-item-id="{{ page.identifier }}"
         data-item-name="{{ page.title }}"
+        data-item-size="{{ page.price2-label }}"
         data-item-price="{{ page.price2 }}"
         data-item-image="{{ page.image }}"
-        data-item-custom1-name="Size"
-        data-item-custom1-options="Small[+5.00]|Medium[+10.00]|Large[+15.00]"
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
         data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}">
         Add to cart
