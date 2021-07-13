@@ -9,7 +9,7 @@ $( document ).ready(function() {
     // Price handler
     $('.price-picker').on('change', function() {
         price = this.value;
-        buyButton.attr('data-item-price', price);
+        // buyButton.attr('data-item-price', price);
         buyButton.attr('data-item-quantity', 1);        
         priceText.text("$"+ price);
         $('.qty').val(1);
