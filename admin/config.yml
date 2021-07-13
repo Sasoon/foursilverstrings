@@ -17,7 +17,15 @@ collections:
       - {label: "Price1 Label", name: "price1-label", widget: "string"}
       - {label: "Price2 Label", name: "price2-label", widget: "string"}
       - {label: "Price3 Label", name: "price3-label", widget: "string"}
-      - {label: "Price1", name: "price1", widget: "number", default: 98}
+      - {label: "Price1", name: "price1", widget: "number",}
       - {label: "Price2", name: "price2", widget: "number"}
       - {label: "Price3", name: "price3", widget: "number"}
+
+      # - {label: "Paper Frame1", name: "paper-frame1", widget: "number"}
+      # - {label: "Paper Frame2", name: "paper-frame2", widget: "number"}
+      # - {label: "Thin Frame1", name: "thin-frame1", widget: "number"}
+      # - {label: "Thin Frame2", name: "thin-frame2", widget: "number"}
+      # - {label: "Thick Frame1", name: "thick-frame1", widget: "number"}
+      # - {label: "Thick Frame2", name: "thick-frame2", widget: "number"}
+
       - {label: "Image", name: "image", widget: "image"}
