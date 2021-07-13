@@ -1,6 +1,6 @@
 ---
 title: Sunflower Painting
-identifier: one-more-time
+identifier: sunflower-painting
 description: This is the sunflower painting!
 price1-label: Small
 price2-label: Medium
