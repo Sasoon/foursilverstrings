@@ -1,83 +1,67 @@
-/* ---- WRAPPER ---- */
-.paintings {
-    .page-content {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-    }
-}
-
 /* ---- GRID ---- */
-.paintings-container {
+.painting-listing-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
 }
 
 /* ---- GRID-ITEM ---- */
-.painting-item {
+.painting-listing-item {
   flex: 1;
   min-width: 10em;
   margin-right: 1em;
-}
 
-/* CLEARFIX */
-.paintings-container:after {
-  content: '';
-  display: block;
-  clear: both;
+  .painting-image {
+    width: 100%;
+  }
 }
 
 /* ---- PAINTING-DETAIL ---- */
-
-.painting__container {
-  display: flex;
-  flex-flow: wrap;
-}
-
-.price {
-  font-size: 1.5em;
-}
-
-.qty {
-  width: 100%;
-  margin: 1em 0;
-}
-
-.painting__title {
-  margin-bottom: 0;
-}
-
-.painting__detail {
-  order: 2;
-  flex: 1;
-  margin-left: 1em;
-}
-
-.painting__image {
-  width: 100%;
-}
-
-.description {
-  display: block;
-}
-
-.buy-button {
-  width: 100%;
-  padding: .5em;
-  text-transform: uppercase;
-  font-family: 'Montserrat';
-  font-weight: 900;
-}
-
-// Mobile
 @include media-query($on-laptop) {
-  .painting__container {
+  .painting-container {
     flex-flow: column;
   }
-
-  .painting__image {
+  .painting-image {
     width: 100%;
   }  
+} 
 
+.painting-container {
+  display: flex;
+  flex-flow: wrap;
+  .price {
+    font-size: 1.5em;
+  }
+  
+  .qty {
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  .painting-title {
+    margin-bottom: 0;
+  }
+  
+  .painting-detail {
+    order: 2;
+    flex: 1;
+    margin-left: 1em;
+  }
+  
+  .painting-image {
+    width: 50%;
+  }
+  
+  .description {
+    display: block;
+  }
+  
+  .buy-button {
+    width: 100%;
+    padding: .5em;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 900;
+  } 
 }
+
