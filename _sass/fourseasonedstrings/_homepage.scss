@@ -1,17 +1,20 @@
 .home {
-    background: url(/assets/images/bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    .main .wrapper {
+        background: url(/assets/images/bg.jpg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: contain;
+        background-position: right -2em;        
+    }
 
     .header {
         font-family: $heading-font-family;
         font-weight: 100;
-        line-height: 90px;
+        line-height: 72px;
         word-spacing: 999em;
         color: $brand-color;
-        @include relative-font-size(5.625);
+        @include relative-font-size(4.5);
     }
 
     .description {

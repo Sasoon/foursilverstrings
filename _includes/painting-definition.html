@@ -1,17 +1,49 @@
+<!-- Variables -->
+{% assign frame1 = page.paper-frame1-label %}
+{% assign frame2 = page.paper-frame2-label %}
+{% assign frame3 = page.thin-frame1-label %}
+{% assign frame4 = page.thin-frame2-label %}
+{% assign frame5 = page.thick-frame1-label %}
+{% assign frame6 = page.thick-frame2-label %}
+
+{% assign sm = page.price1-label %}
+{% assign md = page.price2-label %}
+{% assign lg = page.price3-label %}
+
+{% assign frame1-price = "[+10]" %}
+{% assign frame2-price = "[+20]" %}
+{% assign frame3-price = "[+30]" %}
+
+
+
+
 <div class="painting-detail">
     <h2 class="painting-title">{{ page.title }}</h2>
     <span class="price">${{page.price2}}</span>
     <span class="description">{{page.description}}</span>
 
-    <!-- Pricing -->
+    <!-- Size -->
     <div class="size-container">
-        <label for="price">Size</label>
-        <select id="price" class="price-picker">
-            <option value="{{ page.price1 }}" label="{{ page.price1-label }}">{{ page.price1-label }}: ${{page.price1}}</option>
-            <option selected value="{{ page.price2 }}">{{ page.price2-label }}: ${{page.price2}}</option>
-            <option value="{{ page.price3 }}">{{ page.price3-label }}: ${{page.price3}}</option>
+        <label for="size">Size</label>
+        <select id="size" class="size-selector">
+            <option value="sm">{{ sm }}: ${{page.price1}}</option>
+            <option selected value="md">{{ md }}: ${{page.price2}}</option>
+            <option value="lg">{{ lg }}: ${{page.price3}}</option>
         </select>
     </div>
+
+    <!-- Frame -->
+    <div class="frame-container">
+        <label for="frame">Frame</label>
+        <select id="frame" class="frame-selector">
+            <option value="{{ frame1 }}">{{ frame1 }}: +$10</option>
+            <option value="{{ frame2 }}">{{ frame2 }}: +$10</option>
+            <option value="{{ frame3 }}">{{ frame3 }}: +$20</option>
+            <option value="{{ frame4 }}">{{ frame4 }}: +$20</option>
+            <option value="{{ frame5 }}">{{ frame5 }}: +$30</option>
+            <option value="{{ frame6 }}">{{ frame6 }}: +$30</option>
+        </select>
+    </div>    
 
     <!-- Quantity -->
     <div class="quantity-container">
@@ -19,19 +51,66 @@
         <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
     </div>
 
-    <!-- Buy button -->
+    <!-- Small buy button -->
     <button
-        class="buy-button snipcart-add-item"
+        class="buy-button buy-button--small snipcart-add-item"
         data-item-quantity="1"
         data-item-stackable="never"
         data-item-id="{{ page.identifier }}"
         data-item-name="{{ page.title }}"
-        data-item-size="{{ page.price2-label }}"
+        data-item-price="{{ page.price1 }}"
+        data-item-image="{{ page.image }}"
+        data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
+        data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}"
+        data-item-custom1-name="Frame"
+        data-item-custom1-options="{{ frame1 }}{{frame1-price}}|{{ frame2 }}{{frame1-price}}|{{ frame3 }}{{frame2-price}}|{{ frame4 }}{{frame2-price}}|{{ frame5 }}{{frame3-price}}|{{ frame6 }}{{frame3-price}}">                
+        Add to cart
+    </button>
+
+    <!-- Medium buy button -->
+    <button
+        class="buy-button buy-button--medium snipcart-add-item"
+        data-item-quantity="1"
+        data-item-stackable="never"
+        data-item-id="{{ page.identifier }}"
+        data-item-name="{{ page.title }}"
         data-item-price="{{ page.price2 }}"
         data-item-image="{{ page.image }}"
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
-        data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}">
-        
+        data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}"
+        data-item-custom1-name="Frame"
+        data-item-custom1-options="{{ frame1 }}{{frame1-price}}|{{ frame2 }}{{frame1-price}}|{{ frame3 }}{{frame2-price}}|{{ frame4 }}{{frame2-price}}|{{ frame5 }}{{frame3-price}}|{{ frame6 }}{{frame3-price}}">                                         
         Add to cart
     </button>
+    
+    <!-- Large buy button -->
+    <button
+        class="buy-button buy-button--large  snipcart-add-item"
+        data-item-quantity="1"
+        data-item-stackable="never"
+        data-item-id="{{ page.identifier }}"
+        data-item-name="{{ page.title }}"
+        data-item-price="{{ page.price3 }}"
+        data-item-image="{{ page.image }}"
+        data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
+        data-item-description="Size: {{ lg }}"
+        data-item-custom1-name="Frame"
+        data-item-custom1-options="{{ frame1 }}{{frame1-price}}|{{ frame2 }}{{frame1-price}}|{{ frame3 }}{{frame2-price}}|{{ frame4 }}{{frame2-price}}|{{ frame5 }}{{frame3-price}}|{{ frame6 }}{{frame3-price}}">                                           
+        Add to cart
+    </button>
+    
+    <!-- Original buy button -->
+    <!-- <button
+        class="buy-button buy-button--original  snipcart-add-item"
+        data-item-quantity="1"
+        data-item-max-quantity="1"
+        data-item-id="{{ page.identifier }}"
+        data-item-name="{{ page.title }}"
+        data-item-price="{{ page.price4 }}"
+        data-item-image="{{ page.image }}"
+        data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
+        data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}"
+    >
+        Add to cart
+    </button>     -->
 </div>
