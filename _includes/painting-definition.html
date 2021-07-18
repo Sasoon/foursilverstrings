@@ -10,13 +10,6 @@
 {% assign md = page.price2-label %}
 {% assign lg = page.price3-label %}
 
-{% assign frame1-price = "[+10]" %}
-{% assign frame2-price = "[+20]" %}
-{% assign frame3-price = "[+30]" %}
-
-
-
-
 <div class="painting-detail">
     <h2 class="painting-title">{{ page.title }}</h2>
     <span class="price">${{page.price2}}</span>
@@ -63,7 +56,7 @@
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
         data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}"
         data-item-custom1-name="Frame"
-        data-item-custom1-options="{{ frame1 }}{{frame1-price}}|{{ frame2 }}{{frame1-price}}|{{ frame3 }}{{frame2-price}}|{{ frame4 }}{{frame2-price}}|{{ frame5 }}{{frame3-price}}|{{ frame6 }}{{frame3-price}}">                
+        data-item-custom1-options="{{ frame1 }}[+10]|{{ frame2 }}[+10]|{{ frame3 }}[+20]|{{ frame4 }}[+20]|{{ frame5 }}[+30]|{{ frame6 }}[+30]">                
         Add to cart
     </button>
 
@@ -79,7 +72,7 @@
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
         data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}"
         data-item-custom1-name="Frame"
-        data-item-custom1-options="{{ frame1 }}{{frame1-price}}|{{ frame2 }}{{frame1-price}}|{{ frame3 }}{{frame2-price}}|{{ frame4 }}{{frame2-price}}|{{ frame5 }}{{frame3-price}}|{{ frame6 }}{{frame3-price}}">                                         
+        data-item-custom1-options="{{ frame1 }}[+20]|{{ frame2 }}[+20]|{{ frame3 }}[+30]|{{ frame4 }}[+30]|{{ frame5 }}[+40]|{{ frame6 }}[+40]">                                     
         Add to cart
     </button>
     
@@ -95,7 +88,7 @@
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
         data-item-description="Size: {{ lg }}"
         data-item-custom1-name="Frame"
-        data-item-custom1-options="{{ frame1 }}{{frame1-price}}|{{ frame2 }}{{frame1-price}}|{{ frame3 }}{{frame2-price}}|{{ frame4 }}{{frame2-price}}|{{ frame5 }}{{frame3-price}}|{{ frame6 }}{{frame3-price}}">                                           
+        data-item-custom1-options="{{ frame1 }}[+30]|{{ frame2 }} [+30]|{{ frame3 }}[+40]|{{ frame4 }}[+40]|{{ frame5 }}[+50]|{{ frame6 }}[+50]">                                        
         Add to cart
     </button>
     
