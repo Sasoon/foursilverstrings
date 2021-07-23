@@ -4,8 +4,8 @@ identifier: conversation
 description: "2015"
 price1: 70
 price2: 120
-price3: 165
-price4: 680
+price3: 180
+price4: 830
 price1-label: A4
 price2-label: A3
 price3-label: A2
