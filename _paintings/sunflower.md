@@ -1,19 +1,19 @@
 ---
-title: Sunflower Painting
-identifier: sunflower-painting
-description: This is the sunflower painting!
-price1: 10
-price2: 19
-price3: 28
-price4: 100
-price1-label: Small
-price2-label: Medium
-price3-label: Large
-paper-frame1-label: Paper 1
-paper-frame2-label: Paper 2
-thin-frame1-label: Thin 1
-thin-frame2-label: Thin 2
-thick-frame1-label: Thick 1
-thick-frame2-label: Thick 2
-image: /assets/images/flowers.jpg
+title: Black Grey
+identifier: black-grey
+description: "2017"
+price1: 80
+price2: 120
+price3: 180
+price4: 800
+price1-label: A4
+price2-label: A3
+price3-label: A2
+paper-frame1-label: Blue
+paper-frame2-label: Light grey
+thin-frame1-label: Gold
+thin-frame2-label: Silver
+thick-frame1-label: Black
+thick-frame2-label: White
+image: /assets/images/pxl_20210408_072944836.jpg
 ---
