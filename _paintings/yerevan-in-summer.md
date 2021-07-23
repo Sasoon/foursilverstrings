@@ -9,7 +9,7 @@ price4: 960
 price1-label: A4
 price2-label: A3
 price3-label: A2
-paper-frame1-label: Brown
+paper-frame1-label: Warm orange
 paper-frame2-label: Grey
 thin-frame1-label: Gold
 thin-frame2-label: Silver
