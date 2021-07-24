@@ -17,26 +17,43 @@
 
     <!-- Size -->
     <div class="size-container">
-        <label for="size">Size</label>
         <select id="size" class="size-selector">
-            <option value="sm">{{ sm }}: ${{page.price1}}</option>
-            <option selected value="md">{{ md }}: ${{page.price2}}</option>
-            <option value="lg">{{ lg }}: ${{page.price3}}</option>
+            <option value="sm">{{ sm }}</option>
+            <option selected value="md">{{ md }}</option>
+            <option value="lg">{{ lg }}</option>
         </select>
     </div>
 
-    <!-- Frame -->
     <div class="frame-container">
         <label for="frame">Frame</label>
-        <select id="frame" class="frame-selector">
-            <option value="{{ frame1 }}">{{ frame1 }}: +$10</option>
-            <option value="{{ frame2 }}">{{ frame2 }}: +$10</option>
-            <option value="{{ frame3 }}">{{ frame3 }}: +$20</option>
-            <option value="{{ frame4 }}">{{ frame4 }}: +$20</option>
-            <option value="{{ frame5 }}">{{ frame5 }}: +$30</option>
-            <option value="{{ frame6 }}">{{ frame6 }}: +$30</option>
+        <!-- Small frame -->
+        <select class="frame-selector sm">
+            <option data-price="10" value="{{ frame1 }}">{{ frame1 }}: +$10</option>
+            <option data-price="10" value="{{ frame2 }}">{{ frame2 }}: +$10</option>
+            <option data-price="20" value="{{ frame3 }}">{{ frame3 }}: +$20</option>
+            <option data-price="20" value="{{ frame4 }}">{{ frame4 }}: +$20</option>
+            <option data-price="30" value="{{ frame5 }}">{{ frame5 }}: +$30</option>
+            <option data-price="30" value="{{ frame6 }}">{{ frame6 }}: +$30</option>
         </select>
-    </div>    
+        <!-- Medium frame -->
+        <select class="frame-selector md">
+            <option data-price="20" value="{{ frame1 }}">{{ frame1 }}: +$20</option>
+            <option data-price="20" value="{{ frame2 }}">{{ frame2 }}: +$20</option>
+            <option data-price="30" value="{{ frame3 }}">{{ frame3 }}: +$30</option>
+            <option data-price="30" value="{{ frame4 }}">{{ frame4 }}: +$30</option>
+            <option data-price="40" value="{{ frame5 }}">{{ frame5 }}: +$40</option>
+            <option data-price="40" value="{{ frame6 }}">{{ frame6 }}: +$40</option>
+        </select>     
+        <!-- Large frame -->  
+        <select class="frame-selector lg">
+            <option data-price="30" value="{{ frame1 }}">{{ frame1 }}: +$30</option>
+            <option data-price="30" value="{{ frame2 }}">{{ frame2 }}: +$30</option>
+            <option data-price="40" value="{{ frame3 }}">{{ frame3 }}: +$40</option>
+            <option data-price="40" value="{{ frame4 }}">{{ frame4 }}: +$40</option>
+            <option data-price="50" value="{{ frame5 }}">{{ frame5 }}: +$50</option>
+            <option data-price="50" value="{{ frame6 }}">{{ frame6 }}: +$50</option>
+        </select>         
+    </div>     
 
     <!-- Quantity -->
     <div class="quantity-container">
@@ -107,3 +124,111 @@
         Add to cart
     </button>     -->
 </div>
+
+<!-- Cart JS -->
+<script>
+    // buttons
+    var sm = $('.buy-button--small');
+    var md = $('.buy-button--medium');
+    var lg = $('.buy-button--large');  
+    var btn = $('.buy-button');
+
+    // frame selectors
+    var smFrame = $('.frame-selector.sm');
+    var mdFrame = $('.frame-selector.md');
+    var lgFrame = $('.frame-selector.lg');
+    var frameSelector = $('.frame-selector');
+
+    // default to medium size
+    btn.hide();
+    frameSelector.hide();
+    md.show();
+    mdFrame.show();
+
+    // default pricing (medium + paper frame)
+    var priceText = $('.price');
+    var price = parseInt($('.buy-button:visible').data('item-price'));
+
+    // price calculator 
+    function priceCalc() {
+        sizeHandler();
+        frameHandler();
+        priceText.text("$"+ parseInt($('.qty').val()) * price);
+    }
+
+    // global handler
+    $('select').on('change', function() {
+        priceCalc();
+    });
+
+    $(".qty").change(function() {
+        var qty = parseInt($('.qty').val());
+        console.log(qty);
+        $('.buy-button:visible').attr('data-item-quantity', qty);
+        priceText.text("$"+qty * price);
+        console.log('price from qty: ' + price);
+        });    
+
+    // size handler
+    function sizeHandler() {
+        // get size value
+        var size = $('.size-selector')[0].selectedOptions[0].value;
+        // hide all buttons
+        btn.hide();
+        frameSelector.hide();
+        // price modifier + show relevant buy button
+        switch (size) {
+            case "sm":
+                sm.show();
+                smFrame.show();
+                price = parseInt($('.buy-button:visible').data('item-price'))
+                break;
+            case "md":
+                md.show();
+                mdFrame.show();
+                price = parseInt($('.buy-button:visible').data('item-price'))
+                break;
+            case "lg":
+                lg.show();     
+                lgFrame.show();
+                price = parseInt($('.buy-button:visible').data('item-price')) 
+                break;
+            default:
+                price = parseInt($('.buy-button:visible').data('item-price'))
+            }        
+        btn.attr('data-item-quantity', 1);              
+        $('.qty').val(1);      
+    }
+
+    // frame handler
+    function frameHandler () {
+        // get frame value
+        var frame = $('.frame-selector:visible')[0].selectedOptions[0].value;
+        var framePrice =  $('.frame-selector:visible')[0].selectedOptions[0].dataset.price;
+        console.log(framePrice);
+        // assign frame to buy button
+        $('.buy-button:visible').attr('data-item-custom1-value', frame);
+        // frame price modifier
+        switch (frame) {
+            case "{{frame1}}":
+            case "{{frame2}}":
+                price = parseInt($('.buy-button:visible').data('item-price')) + parseInt(framePrice);
+                console.log('sm');
+                break;
+            case "{{frame3}}":
+            case "{{frame4}}":
+                price = parseInt($('.buy-button:visible').data('item-price')) + parseInt(framePrice);
+                console.log('md');
+                break;
+            case "{{frame5}}":
+            case "{{frame6}}":
+                price = parseInt($('.buy-button:visible').data('item-price')) + parseInt(framePrice);
+                console.log('lg');
+                break;
+            default:  
+        } 
+    }
+    
+    // run price calc on load
+    priceCalc();        
+</script>

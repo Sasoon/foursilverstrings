@@ -28,4 +28,6 @@ collections:
       - {label: "Thin Frame2 Label", name: "thin-frame2-label", widget: "string"}
       - {label: "Thick Frame1 Label", name: "thick-frame1-label", widget: "string"}
       - {label: "Thick Frame2 Label", name: "thick-frame2-label", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image1", name: "image1", widget: "image"}
+      - {label: "Image2", name: "image2", widget: "image"}
+      - {label: "Image3", name: "image3", widget: "image"}

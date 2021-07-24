@@ -4,6 +4,19 @@ title: Paintings
 ---
 <!-- This is the individual painting page config -->
 <div class="painting-container">
+  <div class="painting-detail-image">
+    <div class="fotorama" 
+        data-nav="thumbs"
+        data-allowfullscreen="true"
+        data-fit="contain"
+        data-keyboard="true" 
+        data-loop="true"
+        data-transition="crossfade"
+        data-ratio="800/600">
+      <img src="{{ page.image1 }}" alt="{{ page.title }} painting image">
+      <img src="{{ page.image2 }}" alt="{{ page.title }} painting image">
+      <img src="{{ page.image3 }}" alt="{{ page.title }} painting image">
+    </div>
+  </div>
   {% include painting-definition.html %}
-  <img src="{{ page.image }}" alt="{{ page.title }} painting image" class="painting-image">
 </div>

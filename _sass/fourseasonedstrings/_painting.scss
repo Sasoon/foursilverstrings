@@ -1,34 +1,28 @@
 /* ---- GRID ---- */
 .painting-listing-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-}
-
-/* ---- GRID-ITEM ---- */
-.painting-listing-item {
-  flex: 1;
-  min-width: 10em;
-  margin-right: 1em;
-
-  .painting-image {
-    width: 100%;
-  }
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: grid;
+  grid-gap: 1rem;
 }
 
 /* ---- PAINTING-DETAIL ---- */
-@include media-query($on-laptop) {
-  .painting-container {
-    flex-flow: column;
-  }
-  .painting-image {
-    width: 100%;
-  }  
-} 
-
 .painting-container {
-  display: flex;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, min-content));
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+
+  .painting-detail-image {
+    overflow: hidden;
+  }
+
+  .painting-detail {
+    .size-container {
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+
   .price {
     font-size: 1.5em;
   }
@@ -40,18 +34,8 @@
   
   .painting-title {
     margin-bottom: 0;
-  }
-  
-  .painting-detail {
-    order: 2;
-    flex: 1;
-    margin-left: 1em;
-  }
-  
-  .painting-image {
-    width: 50%;
-  }
-  
+  } 
+    
   .description {
     display: block;
   }
@@ -65,3 +49,29 @@
   } 
 }
 
+@include media-query($on-palm) {
+  .painting-container {
+    
+  } 
+} 
+
+// select to btn
+.selectbtn {
+  display: inline-block;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: all .2s linear;
+  color: #000;
+  font-size: 14px;
+  width: 32%;
+  padding: 0 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+
+.selectbtn.selected {
+  background-color: $brand-color;
+  color: #fff;
+}

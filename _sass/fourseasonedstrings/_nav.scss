@@ -102,6 +102,7 @@ nav {
   .nav-list {
       position: absolute;
       width: 100%;
+      z-index: 2;
   }
   nav {
    width: 100%;
