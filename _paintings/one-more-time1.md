@@ -1,6 +1,6 @@
 ---
-title: Yerevanyan
-identifier: yerevanyan
+title: "Yerevanyan #3"
+identifier: yerevanyan-#3
 description: "2014"
 price1: 90
 price2: 130
