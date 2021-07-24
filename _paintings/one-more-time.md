@@ -1,6 +1,6 @@
 ---
-title: Yerevan in Summer
-identifier: yerevan-in-summer
+title: "Yerevan #2"
+identifier: yerevan-#2
 description: "2016"
 price1: 70
 price2: 120
