@@ -1,6 +1,6 @@
 ---
-title: Yerevan in Summer
-identifier: yerevan-in-summer
+title: "Yerevan #1"
+identifier: yerevan-1
 description: "2015"
 price1: 80
 price2: 130
@@ -9,7 +9,7 @@ price4: 960
 price1-label: A4
 price2-label: A3
 price3-label: A2
-paper-frame1-label: Warm orange
+paper-frame1-label: Midnight Blue
 paper-frame2-label: Grey
 thin-frame1-label: Gold
 thin-frame2-label: Silver
