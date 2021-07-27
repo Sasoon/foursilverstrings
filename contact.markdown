@@ -5,7 +5,7 @@ permalink: /contact/
 order: 4
 ---
 
-<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form class="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
     <label><span>Name:</span> <input type="text" name="name" /></label>   
   </p>

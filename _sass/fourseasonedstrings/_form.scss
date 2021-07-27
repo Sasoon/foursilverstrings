@@ -1,0 +1,12 @@
+.contact, .custom-order {
+    width: max-content;
+    margin: 0 auto;
+    span { 
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+    }
+    input, textarea {
+        width: 170px;
+    }
+}

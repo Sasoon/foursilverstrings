@@ -5,7 +5,7 @@ permalink: /custom/
 exclude: true
 ---
 
-<form name="custom-order" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form class="custom-order" name="custom-order" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
     <label><span>Name:</span> <input type="text" name="name" /></label>   
   </p>
