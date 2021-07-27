@@ -8,6 +8,6 @@ order: 2
 <!-- Generates painting listing page  -->
 <div class="painting-listing-container">
   {% for painting in site.paintings %}
-    {% include painting.html %}
+    {% include paintings.html %}
   {% endfor %}
 </div>

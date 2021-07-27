@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
-order: 4
+title: Custom order
+permalink: /custom/
+exclude: true
 ---
 
-<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form name="custom-order" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
     <label><span>Name:</span> <input type="text" name="name" /></label>   
   </p>

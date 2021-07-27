@@ -1,5 +1,4 @@
 # config.yml
-
 backend:
   name: git-gateway
   branch: staging # Branch to update (optional; defaults to master)
@@ -31,3 +30,8 @@ collections:
       - {label: "Image1", name: "image1", widget: "image"}
       - {label: "Image2", name: "image2", widget: "image"}
       - {label: "Image3", name: "image3", widget: "image"}
+      - {label: "Image4", name: "image4", widget: "image"}
+      - {label: "Image5", name: "image5", widget: "image"}
+      - {label: "Image6", name: "image6", widget: "image"}
+      - {label: "Image7", name: "image7", widget: "image"}
+      - {label: "Image8", name: "image8", widget: "image"}

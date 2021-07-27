@@ -12,7 +12,6 @@
 
 <div class="painting-detail">
     <h2 class="painting-title">{{ page.title }}</h2>
-    <span class="price">${{page.price2}}</span>
     <span class="description">{{page.description}}</span>
 
     <!-- Size -->
@@ -24,42 +23,47 @@
         </select>
     </div>
 
-    <div class="frame-container">
-        <label for="frame">Frame</label>
-        <!-- Small frame -->
-        <select class="frame-selector sm">
-            <option data-price="10" value="{{ frame1 }}">{{ frame1 }}: +$10</option>
-            <option data-price="10" value="{{ frame2 }}">{{ frame2 }}: +$10</option>
-            <option data-price="20" value="{{ frame3 }}">{{ frame3 }}: +$20</option>
-            <option data-price="20" value="{{ frame4 }}">{{ frame4 }}: +$20</option>
-            <option data-price="30" value="{{ frame5 }}">{{ frame5 }}: +$30</option>
-            <option data-price="30" value="{{ frame6 }}">{{ frame6 }}: +$30</option>
-        </select>
-        <!-- Medium frame -->
-        <select class="frame-selector md">
-            <option data-price="20" value="{{ frame1 }}">{{ frame1 }}: +$20</option>
-            <option data-price="20" value="{{ frame2 }}">{{ frame2 }}: +$20</option>
-            <option data-price="30" value="{{ frame3 }}">{{ frame3 }}: +$30</option>
-            <option data-price="30" value="{{ frame4 }}">{{ frame4 }}: +$30</option>
-            <option data-price="40" value="{{ frame5 }}">{{ frame5 }}: +$40</option>
-            <option data-price="40" value="{{ frame6 }}">{{ frame6 }}: +$40</option>
-        </select>     
-        <!-- Large frame -->  
-        <select class="frame-selector lg">
-            <option data-price="30" value="{{ frame1 }}">{{ frame1 }}: +$30</option>
-            <option data-price="30" value="{{ frame2 }}">{{ frame2 }}: +$30</option>
-            <option data-price="40" value="{{ frame3 }}">{{ frame3 }}: +$40</option>
-            <option data-price="40" value="{{ frame4 }}">{{ frame4 }}: +$40</option>
-            <option data-price="50" value="{{ frame5 }}">{{ frame5 }}: +$50</option>
-            <option data-price="50" value="{{ frame6 }}">{{ frame6 }}: +$50</option>
-        </select>         
-    </div>     
-
-    <!-- Quantity -->
-    <div class="quantity-container">
-        <label for="{{ page.identifier }}-qty">Quantity:</label>
-        <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
+    <div class="container">
+        <!-- Frame -->
+        <div class="frame-container">
+            <!-- Small frame -->
+            <select class="frame-selector sm">
+                <option value="" selected disabled hidden>Choose a frame</option>
+                <option data-price="10" value="{{ frame1 }}">{{ frame1 }}: +$10</option>
+                <option data-price="10" value="{{ frame2 }}">{{ frame2 }}: +$10</option>
+                <option data-price="20" value="{{ frame3 }}">{{ frame3 }}: +$20</option>
+                <option data-price="20" value="{{ frame4 }}">{{ frame4 }}: +$20</option>
+                <option data-price="30" value="{{ frame5 }}">{{ frame5 }}: +$30</option>
+                <option data-price="30" value="{{ frame6 }}">{{ frame6 }}: +$30</option>
+            </select>
+            <!-- Medium frame -->
+            <select class="frame-selector md">
+                <option value="" selected disabled hidden>Choose a frame</option>
+                <option data-price="20" value="{{ frame1 }}">{{ frame1 }}: +$20</option>
+                <option data-price="20" value="{{ frame2 }}">{{ frame2 }}: +$20</option>
+                <option data-price="30" value="{{ frame3 }}">{{ frame3 }}: +$30</option>
+                <option data-price="30" value="{{ frame4 }}">{{ frame4 }}: +$30</option>
+                <option data-price="40" value="{{ frame5 }}">{{ frame5 }}: +$40</option>
+                <option data-price="40" value="{{ frame6 }}">{{ frame6 }}: +$40</option>
+            </select>     
+            <!-- Large frame -->  
+            <select class="frame-selector lg">
+                <option value="" selected disabled hidden>Choose a frame</option>
+                <option data-price="30" value="{{ frame1 }}">{{ frame1 }}: +$30</option>
+                <option data-price="30" value="{{ frame2 }}">{{ frame2 }}: +$30</option>
+                <option data-price="40" value="{{ frame3 }}">{{ frame3 }}: +$40</option>
+                <option data-price="40" value="{{ frame4 }}">{{ frame4 }}: +$40</option>
+                <option data-price="50" value="{{ frame5 }}">{{ frame5 }}: +$50</option>
+                <option data-price="50" value="{{ frame6 }}">{{ frame6 }}: +$50</option>
+            </select>         
+        </div>     
+        <!-- Quantity -->
+        <div class="quantity-container">
+            <label for="{{ page.identifier }}-qty" hidden>Quantity:</label>
+            <input type="number" id="{{ page.identifier }}-qty" class="qty" min="1" value="1" />
+        </div>
     </div>
+
 
     <!-- Small buy button -->
     <button
@@ -75,6 +79,7 @@
         data-item-custom1-name="Frame"
         data-item-custom1-options="{{ frame1 }}[+10]|{{ frame2 }}[+10]|{{ frame3 }}[+20]|{{ frame4 }}[+20]|{{ frame5 }}[+30]|{{ frame6 }}[+30]">                
         Add to cart
+        <span class="price">${{page.price2}}</span>
     </button>
 
     <!-- Medium buy button -->
@@ -91,6 +96,7 @@
         data-item-custom1-name="Frame"
         data-item-custom1-options="{{ frame1 }}[+20]|{{ frame2 }}[+20]|{{ frame3 }}[+30]|{{ frame4 }}[+30]|{{ frame5 }}[+40]|{{ frame6 }}[+40]">                                     
         Add to cart
+        <span class="price">${{page.price2}}</span>
     </button>
     
     <!-- Large buy button -->
@@ -103,10 +109,11 @@
         data-item-price="{{ page.price3 }}"
         data-item-image="{{ page.image }}"
         data-item-url="https://staging.fourseasonedstrings.com.au{{ page.url }}"
-        data-item-description="Size: {{ lg }}"
+        data-item-description="{{ page.description | remove: '<p>' | remove: '</p>' }}"
         data-item-custom1-name="Frame"
         data-item-custom1-options="{{ frame1 }}[+30]|{{ frame2 }} [+30]|{{ frame3 }}[+40]|{{ frame4 }}[+40]|{{ frame5 }}[+50]|{{ frame6 }}[+50]">                                        
         Add to cart
+        <span class="price">${{page.price2}}</span>
     </button>
     
     <!-- Original buy button -->
