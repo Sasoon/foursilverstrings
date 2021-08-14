@@ -15,5 +15,7 @@ thin-frame1-label: White +2cm
 thin-frame2-label: Black +2cm
 thick-frame1-label: White +4cm
 thick-frame2-label: Black +4cm
+image1: /assets/images/pxl_20210813_045106234.portrait.jpg
+image3: /assets/images/pxl_20210813_045157209.portrait.jpg
 image: /assets/images/conversation.jpg
 ---
