@@ -1,7 +1,8 @@
 ---
 title: Mount Hunter
 identifier: mount-hunter
-description: "2018. Acrylic on acid-free water colour paper. "
+description: "2018. Acrylic on acid-free water colour paper. Accompanied by
+  Australian birdsong. "
 price1: 86
 price2: 130
 price3: 190
