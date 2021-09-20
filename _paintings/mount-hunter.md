@@ -16,10 +16,10 @@ thin-frame1-label: THIN black frame + white border
 thin-frame2-label: THIN white frame + white border
 thick-frame1-label: THICK black frame + white border
 thick-frame2-label: THICK white frame + white border
-image1: /assets/images/pxl_20210813_045858907.portrait.jpg
-image2: /assets/images/pxl_20210813_045919831.portrait.jpg
+image1: /assets/images/copy-of-copy-of-wall-art-photo-frame-mockup-animated-instagram-story-2-.png
+image2: /assets/images/25.png
 image3: /assets/images/26.png
-image4: /assets/images/25.png
+image4: /assets/images/pxl_20210813_045919831.portrait.jpg
 image5: ""
 image6: ""
 image7: ""
