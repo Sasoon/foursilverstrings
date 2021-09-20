@@ -1,6 +1,6 @@
 ---
-title: Conversations
-identifier: conversations
+title: Conversation
+identifier: conversation
 description: "2015. Acrylic on acid-free linen paper. "
 price1: 90
 price2: 140
@@ -15,7 +15,7 @@ thin-frame1-label: THIN black frame + white internal border
 thin-frame2-label: THIN white frame + white internal border
 thick-frame1-label: THICK black frame + white internal border
 thick-frame2-label: THICK white frame + white internal border
-image1: /assets/images/pxl_20210813_045106234.portrait.jpg
+image1: /assets/images/copy-of-copy-of-wall-art-photo-frame-mockup-animated-instagram-story-1-.png
 image2: /assets/images/20.png
 image3: /assets/images/15.png
 image4: /assets/images/11-2-.png
