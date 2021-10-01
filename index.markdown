@@ -11,5 +11,5 @@ order: 1
 <p class="description">Musician | Painter</p>
 <p class="description">Based in Sydney</p>
 <div class="cta-container">
-  <a href="/contact" class="cta">Contact</a>
+  <a href="/paintings" class="cta">Paintings</a>
 </div>

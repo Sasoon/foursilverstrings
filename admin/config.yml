@@ -2,8 +2,13 @@
 backend:
   name: git-gateway
   branch: staging # Branch to update (optional; defaults to master)
-media_folder: 'assets/images'
-publish_mode: editorial_workflow
+media_library:
+  name: uploadcare
+  config:
+    publicKey: fd5acd76ed91cbd2c598
+  settings:
+    autoFilename: true
+    defaultOperations: '/resize/800x600/'    
 collections:
   - name: 'paintings'
     create: true
