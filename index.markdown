@@ -4,7 +4,7 @@
 title: Home
 permalink: /
 layout: home
-order: 1
+exclude: true
 ---
 
 <h1 class="header">FOUR SEASONED STRINGS</h1>
