@@ -8,7 +8,6 @@ media_library:
     publicKey: fd5acd76ed91cbd2c598
   settings:
     autoFilename: true
-    defaultOperations: '/resize/800x600/'    
 collections:
   - name: 'paintings'
     create: true
