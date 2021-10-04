@@ -16,7 +16,7 @@ order: 4
     <label><span>Message:</span> <textarea name="message"></textarea></label>
   </p>
   <div data-netlify-recaptcha="true"></div>
-  <p>
+  <p class="submit-wrapper">
     <button type="submit">Send</button>
   </p>
 </form>
