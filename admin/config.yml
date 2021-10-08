@@ -6,8 +6,6 @@ media_library:
   name: uploadcare
   config:
     publicKey: fd5acd76ed91cbd2c598
-  settings:
-    autoFilename: true
 collections:
   - name: 'paintings'
     create: true
