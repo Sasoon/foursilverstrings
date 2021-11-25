@@ -1,7 +1,8 @@
 ---
 title: Some Kind Of Wonderful
 identifier: some-kind-of-wonderful
-description: 2016. Acrylic on acid-free canvas paper. Accompanied (mainly) by Joss Stone.
+description: 2016. Acrylic on acid-free linen paper. Accompanied (mainly) by the
+  music of Joss Stone.
 price1: 110
 price2: 150
 price3: 207
