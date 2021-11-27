@@ -152,6 +152,10 @@
   }
 }
 
+.footer-col-wrapper .footer-col ~ .footer-col {
+  text-align: right;
+}
+
 .footer-col-1 {
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
   width:         calc(35% - (#{$spacing-unit} / 2));
