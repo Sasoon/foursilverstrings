@@ -8,8 +8,7 @@ exclude: true
 ---
 
 <h1 class="header">FOUR SEASONED STRINGS</h1>
-<p class="description">Musician | Painter</p>
-<p class="description">Based in Sydney</p>
+<p class="description">I fell in love with the combination of sound, colour and movement.</p>
 <div class="cta-container">
   <a href="/paintings" class="cta">Paintings</a>
 </div>
