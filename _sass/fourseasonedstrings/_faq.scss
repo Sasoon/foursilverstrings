@@ -1,0 +1,7 @@
+.faq-container {
+    cursor: pointer;
+}
+
+details[open] .faq-container {
+    color: $brand-color;
+}

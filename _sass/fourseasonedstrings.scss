@@ -12,7 +12,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #fff !default;
-$bg-color:         #1d1d1d !default;
+$bg-color:         #000 !default;
 $bg-color-alt:     #262626;
 $brand-color:      #ec7969 !default;
 
@@ -49,8 +49,11 @@ $on-desktop:       900px !default;
 // Import partials.
 @import
   "fourseasonedstrings/base",
+  "fourseasonedstrings/nav",
   "fourseasonedstrings/layout",
-  "fourseasonedstrings/contact",
+  "fourseasonedstrings/form",
   "fourseasonedstrings/homepage",
-  "fourseasonedstrings/syntax-highlighting"
+  "fourseasonedstrings/painting",
+  "fourseasonedstrings/syntax-highlighting",
+  "fourseasonedstrings/faq"
 ;

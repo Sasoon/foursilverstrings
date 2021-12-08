@@ -1,17 +1,39 @@
 # config.yml
-
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-media_folder: 'assets/images'
+  branch: staging # Branch to update (optional; defaults to master)
+media_library:
+  name: uploadcare
+  config:
+    publicKey: fd5acd76ed91cbd2c598
 collections:
   - name: 'paintings'
     create: true
     label: 'Painting'
     folder: '_paintings/'
-    slug: "{{ slug }}"
+    slug: "{{slug}}"
     fields:
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Identifier", name: "identifier", widget: "string"}
-      - {label: "Price", name: "price", widget: "number"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Price1", name: "price1", widget: "number"}
+      - {label: "Price2", name: "price2", widget: "number"}
+      - {label: "Price3", name: "price3", widget: "number"}
+      - {label: "Price4", name: "price4", widget: "number"}
+      - {label: "Price1 Label", name: "price1-label", widget: "string"}
+      - {label: "Price2 Label", name: "price2-label", widget: "string"}
+      - {label: "Price3 Label", name: "price3-label", widget: "string"}
+      - {label: "Paper Frame1 Label", name: "paper-frame1-label", widget: "string"}
+      - {label: "Paper Frame2 Label", name: "paper-frame2-label", widget: "string"}
+      - {label: "Thin Frame1 Label", name: "thin-frame1-label", widget: "string"}
+      - {label: "Thin Frame2 Label", name: "thin-frame2-label", widget: "string"}
+      - {label: "Thick Frame1 Label", name: "thick-frame1-label", widget: "string"}
+      - {label: "Thick Frame2 Label", name: "thick-frame2-label", widget: "string"}
+      - {label: "Image1", name: "image1", widget: "image"}
+      - {label: "Image2", name: "image2", widget: "image", required: false}
+      - {label: "Image3", name: "image3", widget: "image", required: false}
+      - {label: "Image4", name: "image4", widget: "image", required: false}
+      - {label: "Image5", name: "image5", widget: "image", required: false}
+      - {label: "Image6", name: "image6", widget: "image", required: false}
+      - {label: "Image7", name: "image7", widget: "image", required: false}
+      - {label: "Image8", name: "image8", widget: "image", required: false}

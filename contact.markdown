@@ -5,17 +5,18 @@ permalink: /contact/
 order: 4
 ---
 
-<form name="contact" method="POST" data-netlify="true">
+<form class="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
+    <label><span>Name:</span> <input type="text" name="name" /></label>   
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+    <label><span>Email:</span> <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label><span>Message:</span> <textarea name="message"></textarea></label>
   </p>
-  <p>
+  <div data-netlify-recaptcha="true"></div>
+  <p class="submit-wrapper">
     <button type="submit">Send</button>
   </p>
 </form>

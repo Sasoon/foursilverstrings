@@ -4,11 +4,11 @@
 title: Home
 permalink: /
 layout: home
-order: 1
+exclude: true
 ---
 
 <h1 class="header">FOUR SEASONED STRINGS</h1>
-<p class="description">I'm a paragraph. Click here to add your own text and edit me. It’s easy. click “Edit Text” or double click me.</p>
+<p class="description">I fell in love with the combination of sound, colour and movement.</p>
 <div class="cta-container">
-  <a href="/contact" class="cta">Contact</a>
+  <a href="/paintings" class="cta">Paintings</a>
 </div>

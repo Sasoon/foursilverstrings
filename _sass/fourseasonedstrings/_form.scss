@@ -1,0 +1,22 @@
+.contact, .custom-order {
+    width: max-content;
+    margin: 0 auto;
+    span { 
+        display: inline-block;
+        width: 5em;
+        vertical-align: top;
+    }
+    input, textarea {
+        width: 170px;
+    }
+
+    button {
+        padding: 10px 40px;
+        background-color: #ec7969;
+        color: black;
+        border: 0;
+        width: 100%;
+        display: inline-block;
+        border-radius: 2px;
+    }
+}

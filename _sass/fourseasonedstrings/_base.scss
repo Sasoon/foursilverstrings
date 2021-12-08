@@ -8,6 +8,8 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+* { box-sizing: border-box; }
+
 
 
 /**
@@ -26,6 +28,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-color: $bg-color;
+  overflow-x: hidden;
 }
 
 
@@ -104,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $text-color;
   text-decoration: none;
 
   &:hover {
@@ -178,13 +181,6 @@ pre {
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   transition: (all .2s ease-in-out);
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
 }
 
 /**
