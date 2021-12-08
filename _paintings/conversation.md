@@ -1,16 +1,16 @@
 ---
 title: Conversation
-identifier: Conversation
+identifier: conversation
 description: 2015. Acrylic on acid-free linen paper. Accompanied by the music of Zap Mama.
-price1: 110
-price2: 150
-price3: 210
-price4: 940
+price1: 130
+price2: 160
+price3: 190
+price4: 980
 price1-label: A4
 price2-label: A3
 price3-label: A2
-paper-frame1-label: White
-paper-frame2-label: Black
+paper-frame1-label: White paper border
+paper-frame2-label: White paper border
 thin-frame1-label: Thin black frame + white internal border
 thin-frame2-label: Thin white frame + white internal border
 thick-frame1-label: Thick black frame + white internal border
