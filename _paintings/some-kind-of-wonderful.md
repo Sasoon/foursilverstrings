@@ -1,7 +1,7 @@
 ---
-title: Some Kind of Wonderful
-identifier: some-kind-of-wonderful
-description: 2014. Acrylic on linen paper. Accompanied by the music of Joss Stone.
+title: Yerevanyan Summer
+identifier: yerevanyan-summer
+description: "2014. Acrylic on linen paper. Accompanied by "
 price1: 130
 price2: 160
 price3: 190
