@@ -15,7 +15,7 @@ thin-frame1-label: Thin black frame + white internal border
 thin-frame2-label: Thin white frame + white internal border
 thick-frame1-label: Thick black frame + white internal border
 thick-frame2-label: Thick white frame + white internal border
-image1: https://ucarecdn.com/a86bc452-6c97-468b-a80d-507f76be124f/
+image1: https://ucarecdn.com/ea5b999e-c7e4-47e1-a071-10e35d024cb5/
 image2: /assets/images/20.png
 image3: /assets/images/15.png
 image4: /assets/images/11-2-.png
