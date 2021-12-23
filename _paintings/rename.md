@@ -1,7 +1,7 @@
 ---
 title: Rename
 identifier: rename
-description: "2018. Acrylic on acid-free canvas paper. "
+description: "2016. Acrylic on acid-free canvas paper. "
 price1: 130
 price2: 160
 price3: 190
