@@ -1,7 +1,7 @@
 ---
-title: Shoubria
-identifier: shoubria
-description: "2018. Acrylic on acid-free canvas paper. "
+title: Rename
+identifier: rename
+description: "2016. Acrylic on acid-free canvas paper. "
 price1: 130
 price2: 160
 price3: 190
@@ -15,10 +15,10 @@ thin-frame1-label: Thin black frame + white internal border
 thin-frame2-label: Thin white frame + white internal border
 thick-frame1-label: Thick black frame + white internal border
 thick-frame2-label: Thick white frame + white internal border
-image1: https://ucarecdn.com/8b1467eb-b148-432e-885d-481e82a14309/-/preview/-/enhance/29/-/sharp/7/
-image2: https://ucarecdn.com/9ba5b882-aa34-4bd0-8ea7-5a974da62998/
-image3: https://ucarecdn.com/18b815a8-1e34-4bba-91c4-6e575b6e606b/-/preview/-/enhance/35/-/sharp/10/
-image4: https://ucarecdn.com/c26c367d-bef8-4007-bd00-4769520afc2c/-/preview/-/enhance/46/-/sharp/6/
+image1: https://ucarecdn.com/64484488-a145-476e-a47b-cff5fc358ff5/-/preview/-/enhance/51/-/sharp/9/
+image2: ""
+image3: ""
+image4: ""
 image5: ""
 image6: ""
 image7: ""
