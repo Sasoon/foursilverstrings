@@ -23,8 +23,8 @@ collections:
       - {label: "Price1 Label", name: "price1-label", widget: "string"}
       - {label: "Price2 Label", name: "price2-label", widget: "string"}
       - {label: "Price3 Label", name: "price3-label", widget: "string"}
-      - {label: "Paper Frame1 Label", name: "paper-frame1-label", widget: "string"}
-      - {label: "Paper Frame2 Label", name: "paper-frame2-label", widget: "string"}
+      - {label: "Paper Frame1 Label", name: "paper-frame1-label", widget: "string", required: false}
+      - {label: "Paper Frame2 Label", name: "paper-frame2-label", widget: "string", required: false}
       - {label: "Thin Frame1 Label", name: "thin-frame1-label", widget: "string"}
       - {label: "Thin Frame2 Label", name: "thin-frame2-label", widget: "string"}
       - {label: "Thick Frame1 Label", name: "thick-frame1-label", widget: "string"}

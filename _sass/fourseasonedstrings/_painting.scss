@@ -12,6 +12,10 @@
   grid-auto-rows: auto;
   grid-gap: 20px;
 
+  .fotorama__nav-wrap {
+    margin-top: 1em;
+  }
+
   .painting-detail-image {
     overflow: hidden;
   }

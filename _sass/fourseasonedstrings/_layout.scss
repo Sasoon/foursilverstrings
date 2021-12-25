@@ -24,8 +24,7 @@
   letter-spacing: 0px;
   margin-bottom: 0;
   color: #fff;
-  transition: (color .4s ease 0s);
-  transition: (left .2s ease-in-out);
+  transition: .2s all ease-in-out !important;
 
   @include media-query($on-desktop) {
     left: 0;
