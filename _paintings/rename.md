@@ -1,7 +1,8 @@
 ---
 title: Rename
 identifier: rename
-description: "2016. Acrylic on acid-free canvas paper. "
+description: 2014. Acrylic and gouache on acid-free smooth paper. Accompanied by
+  the piano works of Ravel
 price1: 130
 price2: 160
 price3: 190
