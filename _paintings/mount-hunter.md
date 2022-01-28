@@ -1,4 +1,5 @@
 ---
+order: 8
 title: Mount Hunter
 identifier: mount-hunter
 description: "2018. Acrylic on acid-free water colour paper. Accompanied by

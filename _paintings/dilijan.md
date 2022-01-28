@@ -1,4 +1,5 @@
 ---
+order: 4
 title: Morning in Dilijan
 identifier: morning-in-dilijan
 description: "2014. Acrylic on linen paper. Accompanied by Katuner. "

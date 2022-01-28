@@ -1,4 +1,5 @@
 ---
+order: 9
 title: Some Kind Of Wonderful
 identifier: some-kind-of-wonderful
 description: 2016. Acrylic on acid-free linen paper. Accompanied by the music of Joss Stone.

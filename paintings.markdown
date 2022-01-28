@@ -11,3 +11,4 @@ order: 2
     {% include paintings.html %}
   {% endfor %}
 </div>
+

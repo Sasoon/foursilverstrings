@@ -57,6 +57,7 @@ plugins:
 collections:
   paintings:
     output: true
+    sort_by: order
     permalink: /:collection/:title
 
 defaults:

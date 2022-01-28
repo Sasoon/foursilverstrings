@@ -1,4 +1,5 @@
 ---
+order: 3
 title: Conversation
 identifier: conversation
 description: 2015. Acrylic on acid-free linen paper. Accompanied by the music of Zap Mama.

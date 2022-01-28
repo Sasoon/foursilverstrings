@@ -1,4 +1,5 @@
 ---
+order: 6
 title: First Winter
 identifier: first-winter
 description: 2017. Acrylic on paper. Accompanied by Pyotr Tchaikovsky's first symphony.
