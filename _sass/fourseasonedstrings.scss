@@ -15,6 +15,7 @@ $text-color:       #fff !default;
 $bg-color:         #000 !default;
 $bg-color-alt:     #262626;
 $brand-color:      #ec7969 !default;
+$brand-color-dark:  darken($brand-color, 25%) !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
