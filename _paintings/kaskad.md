@@ -3,8 +3,8 @@ order: 7
 title: "Kaskad "
 identifier: kaskad
 description: "2015. Acrylic on linen paper. Accompanied by The Element Band albums. "
-price1: 120
-price2: 160
+price1: 110
+price2: 150
 price3: 190
 price4: 960
 price1-label: A4

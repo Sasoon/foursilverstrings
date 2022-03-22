@@ -2,7 +2,8 @@
 order: 3
 title: Conversation
 identifier: conversation
-description: 2015. Acrylic on acid-free linen paper. Accompanied by the music of Zap Mama.
+description: 2015. Acrylic on acid-free linen paper. Accompanied by the recorded
+  conversations with Krishnamurti.
 price1: 130
 price2: 160
 price3: 190
@@ -10,8 +11,8 @@ price4: 980
 price1-label: A4
 price2-label: A3
 price3-label: A2
-paper-frame1-label: White paper border
-paper-frame2-label: White paper border
+paper-frame1-label: ""
+paper-frame2-label: ""
 thin-frame1-label: Thin black frame + white internal border
 thin-frame2-label: Thin white frame + white internal border
 thick-frame1-label: Thick black frame + white internal border

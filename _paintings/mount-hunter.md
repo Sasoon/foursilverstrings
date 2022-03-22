@@ -4,15 +4,15 @@ title: Mount Hunter
 identifier: mount-hunter
 description: "2018. Acrylic on acid-free water colour paper. Accompanied by
   Australian birdsong. "
-price1: 130
-price2: 160
+price1: 120
+price2: 158
 price3: 190
 price4: 960
 price1-label: A4
 price2-label: A3
 price3-label: A2
-paper-frame1-label: White paper frame
-paper-frame2-label: White paper frame
+paper-frame1-label: ""
+paper-frame2-label: ""
 thin-frame1-label: Thin black frame + white internal border
 thin-frame2-label: Thin white frame + white internal border
 thick-frame1-label: Thick black frame + white internal border
