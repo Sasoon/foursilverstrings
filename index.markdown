@@ -7,7 +7,7 @@ layout: home
 exclude: true
 ---
 
-<h1 class="header">FOUR SEASONED STRINGS</h1>
+<h1 class="header">Four Silver Strings</h1>
 <p class="description">I fell in love with the combination of sound, colour and movement.</p>
 <div class="cta-container">
   <a href="/paintings" class="cta">Paintings</a>
