@@ -141,6 +141,14 @@ blockquote {
 }
 
 
+/**
+ * H1
+ */
+h1 {
+  @include relative-font-size(2.125);
+}
+
+
 
 /**
  * Code formatting

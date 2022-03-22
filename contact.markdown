@@ -7,13 +7,13 @@ order: 4
 
 <form class="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
-    <label><span>Name:</span> <input type="text" name="name" /></label>   
+    <input type="text" name="name" placeholder="Name"/>
   </p>
   <p>
-    <label><span>Email:</span> <input type="email" name="email" /></label>
+    <input type="text" name="email" placeholder="Email"/>
   </p>
   <p>
-    <label><span>Message:</span> <textarea name="message"></textarea></label>
+    <textarea name="message" placeholder="Message"></textarea>
   </p>
   <div data-netlify-recaptcha="true"></div>
   <p class="submit-wrapper">

@@ -57,7 +57,7 @@ Send us a message <a href="/contact">here</a> and we'll organise express deliver
 </details>  
 
 <details markdown='1'><summary class="faq-container"><strong>What do I do if there's a problem with my order?</strong></summary> 
-All orders are non-exchangeable and non-refundable with the exception of a parcel arriving damaged. If this occurs, please send an email within 48 hours of receiving the parcel to <a href="mailto:admin@fourseasonedstrings.com.au"></a> with a few photos of the damaged parcel attached and we'll sort it out.
+All orders are non-exchangeable and non-refundable with the exception of a parcel arriving damaged. If this occurs, please send an email within 48 hours of receiving the parcel to <a href="mailto:admin@foursilverstrings.com.au"></a> with a few photos of the damaged parcel attached and we'll sort it out.
 
 If you have entered the shipping address incorrectly, please let us know as soon as possible through our <a href="/contact">Contact Us</a> page. If your parcel has not been dropped off at the post office, we can change your address immediately, you only need to provide your full name, address and the order number. 
 

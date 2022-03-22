@@ -1,3 +1,39 @@
+
+
+/**
+ * Homepage
+ */
+  @include media-query($on-laptop) {
+    .home .main {
+
+      .content, .bg {
+        flex: 100%;
+      }
+  
+      .content {
+        text-align: center;
+
+        .description {
+          width: 100%;
+        }        
+
+        .cta {
+          width: 100%;
+        }
+
+        .header {
+          word-spacing: unset;
+        }        
+      }
+    }
+  }
+
+  @include media-query($on-palm) {  
+    .home .main .content .header {
+      @include relative-font-size(3.5);
+    }        
+  }
+
 /**
  * Site header
  */
@@ -137,6 +173,8 @@
 }
 
 .footer-col-wrapper {
+  width: 100%;
+  display: flex;
   @include relative-font-size(0.9375);
   color: $grey-color;
   margin-left: -$spacing-unit / 2;

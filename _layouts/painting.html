@@ -13,21 +13,15 @@ title: Paintings
         data-loop="true"
         data-transition="crossfade"
         data-ratio="800/600">
-      <img src="{{ page.image1 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image2 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image3 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image4 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image5 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image6 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image7 }}" alt="{{ page.title }} painting image">
-      <img src="{{ page.image8 }}" alt="{{ page.title }} painting image">
+      <img src="{{ page.image1 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image2 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image3 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image4 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image5 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image6 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image7 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
+      <img src="{{ page.image8 }}-/resize/680x/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ page.title }} painting image">
     </div>
   </div>
   {% include painting-definition.html %}
 </div>
-
-<script>
-  console.log('test!')
-  var pageImg = "{{ page.image1 }}"
-  console.log(pageImg);
-</script>
