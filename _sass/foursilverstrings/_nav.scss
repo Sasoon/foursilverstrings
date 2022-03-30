@@ -1,16 +1,12 @@
 // Navigation Variables
-$content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 70px;
-$nav-background: #000;
-$nav-font-color: #ffffff;
-$link-hover-color: #2581DC;
 
 // Outer navigation wrapper
 .navigation {
   height: 100%;
   width: 100%;
-  background: $nav-background;
+  background: $bg-color;
 }
 
 // Logo and branding
@@ -29,7 +25,7 @@ $link-hover-color: #2581DC;
 
 // Container with no padding for navbar
 .nav-container {
-  max-width: $content-width;
+  max-width: #{$content-width};
   margin: 0 auto;
 }
 
@@ -43,6 +39,9 @@ nav {
     li {
       float: left;
       position: relative;
+      a.snipcart-checkout {
+        padding-right: 0;
+      }
       a,
       a:visited {
         padding: 0 20px;
@@ -50,12 +49,11 @@ nav {
         align-items: center;
         height: 70px;
         line-height: $nav-height;
-        background: $nav-background;
-        color: $nav-font-color;
+        background: $bg-color;
+        color: $text-color;
         text-decoration: none;
         &:hover {
           color: $brand-color;
-          background: $bg-color-alt;
           cursor: pointer;
         }
         &:not(:only-child):after {
@@ -90,7 +88,7 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  background: $nav-background;
+  background: $bg-color;
   height: $nav-height;
   width: $nav-height;
 }
@@ -143,7 +141,7 @@ nav {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: $nav-font-color;
+    background: $text-color;
     position: absolute;
     display: block;
     content: '';
@@ -172,7 +170,7 @@ nav {
 
 // Page content 
 article {
-  max-width: $content-width;
+  max-width: #{$content-width};
   margin: 0 auto;
   padding: 10px;
 }
