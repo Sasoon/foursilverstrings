@@ -1,9 +1,15 @@
 <div class="painting-listing-item">
-    <!-- Painting list view -->
-    <div class="painting-information">
-        <a href="{{painting.url}}">
-            <img src="{{ painting.image1 }}-/resize/680x950/-/quality/lightest/-/format/jpeg/-/progressive/yes/" alt="{{ painting.title }} painting image" class="painting-image">
-        </a>        
-        <h4 class="painting-title">{{ painting.title }}</h4>
-    </div>
+  <!-- Painting list view -->
+  <div class="px-4 max-w-md mx-auto">
+    <a href="{{painting.url}}" class="">
+      <img
+        src="{{ painting.image1 }}-/resize/680x950/-/quality/lightest/-/format/jpeg/-/progressive/yes/"
+        alt="{{ painting.title }} painting image"
+        class="rounded-xl max-w-lg w-full mx-auto hover:scale-105 transition ease-in-out duration-300"
+      />
+    </a>
+    <h4 class="py-6 text-center text-3xl font-extrabold font-darkergrotesque">
+      {{ painting.title }}
+    </h4>
+  </div>
 </div>

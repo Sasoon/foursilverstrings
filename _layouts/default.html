@@ -1,11 +1,9 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {% include head.html %}
-<body class="{{ page.title | downcase}}">
+<body class="container max-w-3xl mx-auto {{ page.title | downcase}}">
  {% include header.html %}
- <main class="main">
- <div class="wrapper">
+ <main>
  {{ content }}
- </div>
  </main>
  {% include footer.html %}
 </body>
