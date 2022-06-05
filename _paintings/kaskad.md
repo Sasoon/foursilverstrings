@@ -1,6 +1,6 @@
 ---
 order: 7
-title: "Kaskad "
+title: Kaskad
 identifier: kaskad
 description: "2013. Acrylic on watercolour paper. Accompanied by The Element Band albums. "
 price1: 110
