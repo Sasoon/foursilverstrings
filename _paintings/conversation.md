@@ -18,9 +18,9 @@ thin-frame2-label: Thin white frame + white internal border
 thick-frame1-label: Thick black frame + white internal border
 thick-frame2-label: Thick white frame + white internal border
 image1: https://ucarecdn.com/ea5b999e-c7e4-47e1-a071-10e35d024cb5/
-image2: /assets/images/20.png
-image3: /assets/images/15.png
-image4: /assets/images/11-2-.png
-image5: /assets/images/22.png
-image: /assets/images/conversation.jpg
+image2: https://ucarecdn.com/4b3d228b-ff8d-4058-a418-0b6979b73454/
+image3: https://ucarecdn.com/38b1939e-eeb5-4c2d-86a8-1119fb9dad6f/
+image4: https://ucarecdn.com/e954e64e-3a94-4978-865e-4b3c2c83c814/112
+image5: https://ucarecdn.com/131a4729-0771-4f06-949b-9d67a62bf1fa/
+image6: https://ucarecdn.com/aa50d880-34e4-4295-a432-2d9bdefae397/
 ---
