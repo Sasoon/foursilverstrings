@@ -9,6 +9,26 @@
   .menu-btn {
     @apply md:px-4 py-2 block text-accent-black cursor-pointer self-center;
   }
+
+  /* Below styles had to be applied this way because the HTML is dynamically generated */
+  /* frame size styles */
+  .size-container div {
+    @apply inline-block bg-accent-grey cursor-pointer text-center text-accent-black text-sm p-2 rounded-sm uppercase hover:bg-accent-yellow transition-all ease-in-out duration-200 mr-1 flex-1;
+  }
+
+  .size-container .selected {
+    @apply bg-accent-yellow;
+  }
+
+  /* frame selector styles */
+  .frame-selector {
+    @apply bg-accent-grey rounded-sm cursor-pointer p-2 w-full h-10;
+  }
+
+  /* buy button styles */
+  .buy-button {
+    @apply bg-accent-grey hover:bg-accent-yellow rounded-sm cursor-pointer p-2 w-full h-10;
+  }
 }
 
 @layer base {
