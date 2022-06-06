@@ -10,15 +10,17 @@ module.exports = {
     "./*.md",
   ],
   theme: {
-    colors: {
-      "accent-black": "#000",
-      "accent-yellow": "#fec824",
-      "accent-grey": "#ededf1",
+    extend: {
+      colors: {
+        "accent-black": "#000",
+        "accent-yellow": "#fec824",
+        "accent-grey": "#ededf1",
+      },
+      fontFamily: {
+        robotoslab: ["Roboto Slab"],
+        darkergrotesque: ["Darker Grotesque"],
+      },
+      plugins: [],
     },
-    fontFamily: {
-      robotoslab: ["Roboto Slab"],
-      darkergrotesque: ["Darker Grotesque"],
-    },
-    plugins: [],
   },
 };

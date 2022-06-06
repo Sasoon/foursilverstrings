@@ -1,22 +1,22 @@
 <footer class="px-4">
   <div
-    class="flex justify-between py-4 font-darkergrotesque mt-12 border-t-2 border-accent-grey"
+    class="flex justify-between py-4 font-robotoslab text-sm mt-12 border-t-2 border-accent-grey"
   >
     <ul class="contact-list">
-      <li class="p-name">
+      <li>
         {%- if site.author -%} {{ site.author | escape }} {%- else -%} {{
         site.title | escape }} {%- endif -%}
       </li>
       {%- if site.email -%}
       <li>
-        <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </li>
       {%- endif -%}
     </ul>
     <div class="footer-col footer-col-equal">
-      <p>Violinist since 1994</p>
-      <p>Teaching since 2009</p>
-      <p>Painting since 2011</p>
+      <p class="mb-0">Violinist since 1994</p>
+      <p class="mb-0">Teaching since 2009</p>
+      <p class="mb-0">Painting since 2011</p>
     </div>
   </div>
 </footer>

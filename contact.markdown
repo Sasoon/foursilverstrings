@@ -5,18 +5,18 @@ permalink: /contact/
 order: 4
 ---
 
-<form class="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form class="contact text-center" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
-    <input type="text" name="name" placeholder="Name"/>
+    <input class="p-4 bg-accent-grey rounded-md w-full" type="text" name="name" placeholder="Name"/>
   </p>
   <p>
-    <input type="text" name="email" placeholder="Email"/>
+    <input class="p-4 bg-accent-grey rounded-md w-full" type="text" name="email" placeholder="Email"/>
   </p>
   <p>
-    <textarea name="message" placeholder="Message"></textarea>
+    <textarea rows="10" class="p-4 bg-accent-grey rounded-md w-full" name="message" placeholder="Message"></textarea>
   </p>
   <div data-netlify-recaptcha="true"></div>
   <p class="submit-wrapper">
-    <button type="submit">Send</button>
+    <button class="p-4 w-full text-center font-bold bg-accent-yellow text-accent-black inline-block rounded-md hover:brightness-110 ease-in-out duration-200" type="submit">Send</button>
   </p>
 </form>
