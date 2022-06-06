@@ -44,3 +44,7 @@
     @apply mb-4;
   }
 }
+
+.fotorama > div {
+  margin: 0 auto;
+}
