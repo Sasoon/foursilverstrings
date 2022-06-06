@@ -4,11 +4,11 @@ page.paper-frame2-label %} {% assign frame3 = page.thin-frame1-label %} {%
 assign frame4 = page.thin-frame2-label %} {% assign frame5 =
 page.thick-frame1-label %} {% assign frame6 = page.thick-frame2-label %} {%
 assign sm = page.price1-label %} {% assign md = page.price2-label %} {% assign
-lg = page.price3-label %}
+lg = page.price3-label %} {% assign price2 = page.price2 %}
 
-<div class="painting-detail px-4 py-6">
+<div class="painting-detail px-4 py-6 font-robotoslab">
   <h2
-    class="border-b-1 border-accent-black mb-1 painting-title py-6 text-center text-3xl font-extrabold font-darkergrotesque"
+    class="border-b-1 border-accent-black painting-title py-6 text-center text-3xl font-extrabold font-darkergrotesque"
   >
     {{ page.title }}
   </h2>
@@ -36,44 +36,44 @@ lg = page.price3-label %}
       <!-- Small frame -->
       <select class="frame-selector sm">
         <option value="" selected disabled hidden>Choose a frame</option>
-        {% if frame1 %}
-        <option data-price="10" value="{{ frame1 }}">{{ frame1 }}: +$10</option>
-        {% endif %} {% if frame2 %}
-        <option data-price="10" value="{{ frame2 }}">{{ frame2 }}: +$10</option>
-        {% else %}
+        <option disabled data-price="10" value="{{ frame1 }}">
+          {{ frame1 }}: +$10
+        </option>
+        <option disabled data-price="10" value="{{ frame2 }}">
+          {{ frame2 }}: +$10
+        </option>
         <option data-price="20" value="{{ frame3 }}">{{ frame3 }}: +$20</option>
         <option data-price="20" value="{{ frame4 }}">{{ frame4 }}: +$20</option>
         <option data-price="30" value="{{ frame5 }}">{{ frame5 }}: +$30</option>
         <option data-price="30" value="{{ frame6 }}">{{ frame6 }}: +$30</option>
-        {% endif %}
       </select>
       <!-- Medium frame -->
       <select class="frame-selector md">
         <option value="" selected disabled hidden>Choose a frame</option>
-        {% if frame1 %}
-        <option data-price="20" value="{{ frame1 }}">{{ frame1 }}: +$20</option>
-        {% endif %} {% if frame2 %}
-        <option data-price="20" value="{{ frame2 }}">{{ frame2 }}: +$20</option>
-        {% else %}
+        <option disabled data-price="20" value="{{ frame1 }}">
+          {{ frame1 }}: +$20
+        </option>
+        <option disabled data-price="20" value="{{ frame2 }}">
+          {{ frame2 }}: +$20
+        </option>
         <option data-price="30" value="{{ frame3 }}">{{ frame3 }}: +$30</option>
         <option data-price="30" value="{{ frame4 }}">{{ frame4 }}: +$30</option>
         <option data-price="40" value="{{ frame5 }}">{{ frame5 }}: +$40</option>
         <option data-price="40" value="{{ frame6 }}">{{ frame6 }}: +$40</option>
-        {% endif %}
       </select>
       <!-- Large frame -->
       <select class="frame-selector lg">
         <option value="" selected disabled hidden>Choose a frame</option>
-        {% if frame1 %}
-        <option data-price="30" value="{{ frame1 }}">{{ frame1 }}: +$30</option>
-        {% endif %} {% if frame2 %}
-        <option data-price="30" value="{{ frame2 }}">{{ frame2 }}: +$30</option>
-        {% else %}
+        <option disabled data-price="30" value="{{ frame1 }}">
+          {{ frame1 }}: +$30
+        </option>
+        <option disabled data-price="30" value="{{ frame2 }}">
+          {{ frame2 }}: +$30
+        </option>
         <option data-price="40" value="{{ frame3 }}">{{ frame3 }}: +$40</option>
         <option data-price="40" value="{{ frame4 }}">{{ frame4 }}: +$40</option>
         <option data-price="50" value="{{ frame5 }}">{{ frame5 }}: +$50</option>
         <option data-price="50" value="{{ frame6 }}">{{ frame6 }}: +$50</option>
-        {% endif %}
       </select>
     </div>
     <!-- Quantity -->
@@ -181,6 +181,7 @@ lg = page.price3-label %}
 
   // default pricing (medium + paper frame)
   var priceText = $(".price");
+  console.log(priceText);
   var price = parseInt($(".buy-button:visible").data("item-price"));
 
   // price calculator
@@ -240,6 +241,7 @@ lg = page.price3-label %}
     var frame = $(".frame-selector:visible")[0].selectedOptions[0].value;
     var framePrice = $(".frame-selector:visible")[0].selectedOptions[0].dataset
       .price;
+    console.log("frame!" + frame);
     console.log(framePrice);
     // assign frame to buy button
     $(".buy-button:visible").attr("data-item-custom1-value", frame);
@@ -251,6 +253,7 @@ lg = page.price3-label %}
           parseInt($(".buy-button:visible").data("item-price")) +
           parseInt(framePrice);
         console.log("sm");
+        console.log(price);
         break;
       case "{{frame3}}":
       case "{{frame4}}":

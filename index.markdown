@@ -7,8 +7,8 @@ layout: home
 exclude: true
 ---
 
-<p class="pb-6 text-4xl font-extrabold font-darkergrotesque">I fell in love with the combination of sound, colour and movement.</p>
-<p class="pb-6 text-xl font-darkergrotesque">Based in Sydney and this is extra content and this is extra content and this is extra content and this is extra content and this is extra content and this is extra content to pad this paragraph further</p>
+<p class="text-4xl font-extrabold font-darkergrotesque">I fell in love with the combination of sound, colour and movement.</p>
+<p class="text-lg font-robotoslab">Based in Sydney and this is extra content and this is extra content and this is extra content and this is extra content and this is extra content and this is extra content to pad this paragraph further</p>
 <div class="cta-container py-4">
   <a href="/paintings" class="p-4 w-full text-center font-bold bg-accent-yellow text-accent-black inline-block rounded-xl hover:brightness-110 ease-in-out duration-200">Paintings</a>
 </div>

@@ -16,9 +16,8 @@ module.exports = {
       "accent-grey": "#ededf1",
     },
     fontFamily: {
-      oswald: ["Oswald"],
+      robotoslab: ["Roboto Slab"],
       darkergrotesque: ["Darker Grotesque"],
-      lato: ["Lato"],
     },
     plugins: [],
   },
