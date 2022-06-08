@@ -4,15 +4,15 @@ title: First Winter
 identifier: first-winter
 description: 2017. Acrylic on paper. Accompanied by Pyotr Tchaikovsky's first
   symphony and string quartets.
-price1: 129
+price1: 130
 price2: 160
 price3: 190
 price4: 960
 price1-label: A4
 price2-label: A3
 price3-label: A2
-paper-frame1-label: White paper frame
-paper-frame2-label: White paper frame
+paper-frame1-label: ""
+paper-frame2-label: ""
 thin-frame1-label: Thin white frame + white internal border
 thin-frame2-label: Thin black frame + white internal border
 thick-frame1-label: Thick white frame + white internal border
