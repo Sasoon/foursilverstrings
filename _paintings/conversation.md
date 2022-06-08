@@ -2,7 +2,7 @@
 order: 3
 title: Conversation
 identifier: conversation
-description: 2015. Acrylic on acid-free linen paper. Accompanied by the recorded
+description: 2016. Acrylic on acid-free linen paper. Accompanied by the recorded
   conversations with Krishnamurti.
 price1: 130
 price2: 160
