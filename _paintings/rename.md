@@ -2,8 +2,8 @@
 order: 10
 title: Ravel
 identifier: ravel
-description: 2014. Acrylic and gouache on acid-free smooth paper. Accompanied by
-  the piano works of Ravel.
+description: 2014. Acrylic and gouache on watercolour paper. Accompanied by the
+  piano works of Ravel.
 price1: 110
 price2: 147
 price3: 190
