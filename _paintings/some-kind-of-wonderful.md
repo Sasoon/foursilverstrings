@@ -2,7 +2,7 @@
 order: 1
 title: Pink City
 identifier: pink-city
-description: "2014. Acrylic on linen paper. "
+description: "2014. Acrylic on linen paper. Accompanied by Bjork. "
 price1: 110
 price2: 150
 price3: 190
